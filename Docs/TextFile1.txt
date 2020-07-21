@@ -1,0 +1,4 @@
+﻿Enable-Migrations -ContextTypeName PlayerContext -MigrationsDirectory Migrations
+add-migration -ConfigurationTypeName codefirstapp.Migrations.Configuration "InitialVersion"
+
+update-database -ConfigurationTypeName codefirstapp.Migrations.Configuration
