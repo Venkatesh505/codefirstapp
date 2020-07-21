@@ -20,8 +20,8 @@ namespace codefirstapp.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-            context.Players.AddOrUpdate(p => p.Name, new Players { Name = "Venkatesh",City="Kurnool",Pincode=515009 },
-                                            new Players { Name = "latha", City = "Dhone", Pincode = 515679 });
+            context.Players.AddOrUpdate(p => p.Name, new Players { Name = "Venkatesh",City="Kurnool",District="Pembarthi",Pincode=515009 },
+                                            new Players { Name = "latha", City = "Dhone", District = "Pembarthi", Pincode = 515679 });
             context.SaveChanges();
         }
     }
